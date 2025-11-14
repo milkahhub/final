@@ -1,10 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>final</title>
+    <title>Milly Accessorries</title>
+
+    <!-- ✅ TailwindCSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Optional: custom config for accent color -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              accent: "#4f46e5", // indigo-600 for Laptify branding
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <div id="root"></div>

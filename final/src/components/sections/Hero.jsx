@@ -1,26 +1,25 @@
-import React from "react";
+import React from 'react';
+import Button from '../common/Button';
 
 export default function Hero() {
   return (
-    <section className="bg-gray-100 py-16 px-6 text-center">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-5xl font-bold text-gray-900 mb-4">
-          Elevate Your Laptop Experience
-        </h2>
-        <p className="text-gray-600 mb-6">
+    <section
+      className="relative bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center"
+      style={{
+        backgroundImage: "url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1600&q=80')",
+      }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/50"></div>
+
+      {/* Content */}
+      <div className="relative z-10 text-center px-6 max-w-2xl">
+        <h2 className="text-5xl font-bold text-green-600 mb-4">Elevate Your Laptop Experience</h2>
+        <p className="text-gray-100 mb-6">
           Premium accessories designed for comfort, performance, and style.
-          From stands to backpacks — Ramm Technologies has you covered.
+          From desks to backpacks — Milly Accessories
         </p>
-        <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
-          Shop Now
-        </button>
-      </div>
-      <div className="mt-10">
-        <img
-          src="/src/assets/images/hero.jpg"
-          alt="Laptop workspace"
-          className="mx-auto rounded-2xl shadow-lg w-full max-w-3xl"
-        />
+        <Button text="Shop Now" />
       </div>
     </section>
   );
