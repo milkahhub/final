@@ -1,24 +1,36 @@
 import React from 'react';
-import Card from '../common/Card';
 
-const products = [
-  { name: 'Laptop Stand', img: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR8u4auiK9Tt50fhnDoGeA-B4I0IIQ9QFILy5ZJrkGKYFERiI3pCAWJcCZq0eu2pMzhm1tqm0ee968myPDS4cYvMiwP5Iwo_3JK64S1DRX5Npz2BfvAMXhAriZ1r88sga2dsYPHLA&usqp=CAc' },
-  { name: 'Wireless Keyboard', img: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQK5d2CPcHURmH0pK7IQuT6HBlDuZxDHHoGY4Bcfe9ggTVrKD73ta_b06WtxU1wmwDVv2HgJumtotnueWUIxbSWbldP7aGRIDATiMTj6IFiX5j3aDQnv83d1BqKYbt9YaVtZOEkvH4&usqp=CAc' },
-  { name: 'Wireless Mouse', img: 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRHJnPZ7Co3vYtJd81huzY_hdmwp-tg3U0z_j2PkV1wFa0bridUS67yq3mg2WXTgckyA0knQPTdBSIOZ91gle_KCatwTsLGaOxYgAma9QRxAYdQt101H1Kt0jcLSbR_LnKorACqwQ&usqp=CAc' },
-  { name: 'Laptop Sleeve', img: 'https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQgOIppL3qb2611O4rXpAoHai6a52eyXs54DcSNKBiWgchgTGRkRrb_boeu1wQX4PbiTojMcTc_R5aQF0EhuY2EWrSvduApaKqSRzooGhucejLcoJ_fjmuK-8rt5ZgZBQ1WCA&usqp=CAc' },
-  { name: 'USB-C Hub', img: 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQx_W6AHiokN7HgkoA3Yd3KHM5upJczeEHGQYGBflCSsKSJsdWBKXqkweCI8xCcSSa7O-iv92RunVANEnXO2-48YEBC01cQJkerpOuFuMluBgJzDLK-UaSL&usqp=CAc' },
-  { name: 'LED Desk Lamp', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWSUTwJd2KbyGIHqSpXYQC3soJPvd-uDxjPw&s' },
-];
-
-export default function Products() {
+export default function About() {
   return (
-    <section id="products" className="bg-gray-100 py-20">
-      <div className="max-w-6xl mx-auto text-center px-6">
-        <h3 className="text-3xl font-semibold mb-6 text-blue-600">Our Products</h3>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {products.map((p, i) => (
-            <Card key={i} title={p.name} img={p.img} />
-          ))}
+    <section id="About" className="bg-white py-20">
+      <div className="max-w-5xl mx-auto px-6 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-green-600 mb-6">
+          About Milly Accessories
+        </h2>
+        <p className="text-gray-700 text-lg md:text-xl mb-6">
+          At <span className="font-semibold text-green-600">Milly Accessories</span>, we craft premium accessories
+          for your everyday tech needs. From sleek laptop stands and wireless keyboards to protective phone cases and
+          charging hubs, our products are designed to elevate your digital experience.
+        </p>
+        <p className="text-gray-700 text-lg md:text-xl">
+          Our mission is simple: provide high-quality, stylish, and functional accessories that help you work smarter,
+          travel easier, and enjoy your devices to the fullest.
+        </p>
+
+        {/* Updated Image Section */}
+        <div className="mt-10 grid md:grid-cols-2 gap-8">
+          <img
+            src="https://images.unsplash.com/photo-1705508216613-be1715a31212?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGxhcHRvcCUyMGFjY2Vzb3JpZXN8ZW58MHx8MHx8fDA%3D"
+            alt="Laptop Accessories"
+            className="rounded-lg shadow-md"
+          />
+
+
+          <img
+            src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80"
+            alt="Phone Accessories"
+            className="rounded-lg shadow-md"
+          />
         </div>
       </div>
     </section>
