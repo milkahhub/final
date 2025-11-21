@@ -26,10 +26,10 @@ export default function Footer() {
   const linkText = '#E8F5E9'; 
 
   return (
-    <footer className="text-gray-200">
+    <footer className="text-gray-200" style={{ backgroundColor: darkBg }}>
 
       {/* Top Footer Section */}
-      <div className="max-w-7xl mx-auto py-10 px-6 sm:px-8 lg:px-12" style={{ backgroundColor: darkBg }}>
+      <div className="max-w-7xl mx-auto py-10 px-6 sm:px-8 lg:px-12">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
           <h4 className="text-white text-2xl font-semibold mb-4 md:mb-0">
             Milly Tech Accessories
@@ -38,10 +38,7 @@ export default function Footer() {
       </div>
 
       {/* Main Footer Content */}
-      <footer
-        className="w-full py-16 px-4 sm:px-6 lg:px-8"
-        style={{ backgroundColor: darkBg, color: linkText }}
-      >
+      <div className="w-full py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
 
           {/* Logo + Socials */}
@@ -92,13 +89,13 @@ export default function Footer() {
           {/* Bottom Text */}
           <div
             className="text-center text-sm pt-8"
-            style={{ borderTop: '1px solid #145A32' }}
+            style={{ borderTop: '1px solid #145A32', color: linkText }}
           >
             © 2025 Milly Tech Accessories. All rights reserved.
           </div>
 
         </div>
-      </footer>
+      </div>
     </footer>
   );
 }
