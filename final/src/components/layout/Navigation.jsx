@@ -24,7 +24,6 @@ export default function Navigation() {
         <div className="flex flex-col space-y-3 px-4 pb-4 text-gray-700 font-medium">
           <a href="#Home" className="hover:text-green-600">Home</a>
           <a href="#About" className="hover:text-green-600">About</a>
-          <a href="#newsletter" className="hover:text-green-600">Newsletter</a>
           <a href="#Products" className="hover:text-green-600">Products</a>
           <a href="#Contact" className="hover:text-green-600">Contact</a>
         </div>

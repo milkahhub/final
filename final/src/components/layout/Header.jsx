@@ -11,7 +11,6 @@ export default function Header() {
         <nav className="flex space-x-6 text-gray-600 font-medium">
           <a href="#Home" className="hover:text-green-600">Home</a>
           <a href="#About" className="hover:text-green-600">About</a>
-          <a href="#newsletter" className="hover:text-green-600">Newsletter</a>
           <a href="#Products" className="hover:text-green-600">Products</a>
           <a href="#Contact" className="hover:text-green-600">Contact</a>
         </nav>
